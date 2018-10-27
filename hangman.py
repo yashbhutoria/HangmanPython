@@ -43,7 +43,6 @@ def main():
         wl_file = open("wordlist.txt","r")
         word_list = wl_file.read().replace("\n",",").split(",")
         random_word = random.choice(word_list)
-        #print("Example output for : ",random_word)
         play(random_word)
     except:
         print("wordlist.txt not found! please create wordlist.txt with comma separated words")
